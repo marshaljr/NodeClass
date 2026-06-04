@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    border: 1px solid #ccc;
+    width: 400px;
+    height: 550px;
+    border-radius: 10px;
+    z-index: 10;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: whitesmoke;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.5s ease;
+}
+
+.image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    gap: 10px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+#M {
+    font-size: 26px;
+    font-weight: bold;
+    color: #72b7cb;
+}
+
+.image img {
+    width: 150px;
+    height: 160px;
+    border-radius: 50%;
+    /* object-fit: cover; */
+}
+
+.image p {
+    width: 250px;
+    font-size: 14px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    gap: 20px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #bb4f3f;
+    width: 250px;
+    gap: 20px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.social-links,
+#social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links a {
+    list-style: none;
+    text-decoration: none;
+    color: #333;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+    color: #007bff;
+    transform: translateY(-5px);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#social #instagram:hover {
+    transform: scale(1.1);
+    color: #c22121;
+    transform: translateY(-5px);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#social #github {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#social #github:hover {
+    transform: scale(1.1);
+    filter: invert(1);
+    transform: translateY(-5px);
+}
